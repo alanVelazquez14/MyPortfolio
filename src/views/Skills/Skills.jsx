@@ -3,6 +3,7 @@ import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs } from "react-icons/f
 import { SiRedux, SiNextdotjs, SiStyledcomponents, SiTailwindcss, SiTypescript, SiMongodb, SiMysql, SiPostgresql, SiGit, SiGithub, SiVercel, SiPostman, SiJest } from "react-icons/si";
 import {
   Container,
+  InfoText,
   SkillsContainer,
   SkillsList,
   SkillsTitle,
@@ -65,6 +66,12 @@ const Skills = () => {
           </div>
         ))}
       </Container>
+      <InfoText>
+      Feel free to check out the source code of this portfolio here: 
+      <a href="https://github.com/alanVelazquez14/MyPortfolio" target="_blank" rel="noreferrer">
+         GitHub
+      </a>
+      </InfoText>
     </SkillsContainer>
   );
 };

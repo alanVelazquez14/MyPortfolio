@@ -50,3 +50,22 @@ export const SkillsList = styled.ul`
     color: #f1f1f1;
   }
 `;
+
+export const InfoText = styled.p`
+  font-size: 1rem;
+  margin-top: 120px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: #b9d6f2;
+
+  a {
+    margin-left: 10px;
+    color: #b9d6f2;
+
+    &:hover {
+      color: brown;
+    }
+  }
+`;
