@@ -10,7 +10,7 @@ export const NavbarContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #003559;
+  background-color: #02538a;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
 `;
 

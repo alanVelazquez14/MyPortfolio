@@ -8,6 +8,7 @@ import {
 } from "./HomeStyles";
 import SocialLinks from "../../components/SocialLinks/SocialLinks";
 import Typed from "typed.js";
+import { motion } from "framer-motion";
 
 const Home = () => {
   const typedEl = useRef(null);
@@ -32,33 +33,30 @@ const Home = () => {
   }, []);
 
   return (
-    <HomeContainer>
+    <HomeContainer id="home">
       <TitleHome>
         <span ref={typedEl} className="element"></span>
       </TitleHome>
-      <div>
-        Hi, I'm a <span>FULL STACK DEVELOPER.</span>
-      </div>
-      <br /> Welcome to my portfolio.
+      <motion.h1
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        Hola, soy <span>FULL STACK DEVELOPER</span>.
+      </motion.h1>
+      <br /> Bienvenido a mi portfolio.
       <HomeText>
-        If you want to get in touch with me, write to me at{" "}
-        <a
-          href="mailto:velazquez.alan14@gmail.com"
-          style={{
-            color: "#007bff",
-            textDecoration: "none",
-            fontWeight: "bold",
-          }}
-        >
+        Si deseas contactar conmigo escríbeme a
+        <a href="mailto:velazquez.alan14@gmail.com">
           velazquez.alan14@gmail.com
         </a>
       </HomeText>
       <ButtonHome>
         <a href="/CV ALAN.pdf" download="CV ALAN.pdf">
-          Download CV
+          Descargar CV
         </a>
       </ButtonHome>
-      <Contact>Connect with me on any of these platforms:</Contact>
+      <Contact>Conéctate conmigo en cualquiera de estas plataformas:</Contact>
       <SocialLinks />
     </HomeContainer>
   );

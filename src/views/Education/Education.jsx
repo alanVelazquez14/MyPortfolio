@@ -3,6 +3,7 @@ import {
   ButtonCertificate,
   ContainerButtons,
   EducationContainer,
+  ParagraphEducation,
   SubtitleEducation,
   TextEducation,
   TitleEducation,
@@ -26,17 +27,27 @@ const Education = () => {
 
   return (
     <>
-      <EducationContainer>
+      <EducationContainer id="education">
         <TitleEducation>EDUCATION</TitleEducation>
 
         <SubtitleEducation>NUCBA</SubtitleEducation>
         <TextEducation>Full Stack Developer (Finalizado - 2024)</TextEducation>
-
+        <ParagraphEducation>
+          Formación integral que abarcó tanto el frontend como el backend, con
+          énfasis en la creación de aplicaciones web escalables y eficientes.
+        </ParagraphEducation>
         <SubtitleEducation>SOY HENRY</SubtitleEducation>
         <TextEducation>Full Stack Developer (En curso)</TextEducation>
+        <ParagraphEducation>
+          Curso intensivo que me está preparando para enfrentar desafíos reales
+          en el desarrollo de software, con un enfoque práctico y metodologías
+          ágiles.
+        </ParagraphEducation>
 
-        <SubtitleEducation>CERTIFICATES</SubtitleEducation>
-        <TextEducation>Click on the certificate to download it.</TextEducation>
+        <SubtitleEducation>CERTIFICADOS</SubtitleEducation>
+        <TextEducation>
+          Haga clic en el certificado para descargarlo.
+        </TextEducation>
         <ContainerButtons>
           {certificates.map((cert) => (
             <ButtonCertificate key={cert.name}>

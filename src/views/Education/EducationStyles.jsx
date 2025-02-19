@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const EducationContainer = styled.div`
-  height: 80vh;
+  height: 90vh;
   display: flex;
   justify-content: start;
   margin-left: 400px;
@@ -25,6 +25,13 @@ export const TextEducation = styled.p`
   margin-top: -20px;
 `;
 
+export const ParagraphEducation = styled.p`
+  font-size: 1rem;
+  color: #b9d6f2;
+  margin-left: 20px;
+  margin-top: -10px;
+`;
+
 export const ContainerButtons = styled.div`
   display: flex;
   gap: 20px;
@@ -36,7 +43,7 @@ export const ButtonCertificate = styled.div`
   gap: 15px;
   margin-top: 20px;
   margin-left: 20px;
-    font-weight: 700;
+  font-weight: 700;
   a {
     background-color: #007bff;
     color: white;

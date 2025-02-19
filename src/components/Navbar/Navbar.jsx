@@ -1,21 +1,33 @@
 import React from "react";
-import { Link, LinksStyled, NavbarContainer } from "./NavbarStyles";
+import {
+  Link as StyledLink,
+  LinksStyled,
+  NavbarContainer,
+} from "./NavbarStyles";
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
-    const navLinks = [
-        { title: "Alan", path: "/" },
-        { title: "About", path: "/about" },
-        { title: "Projects", path: "/projects" },
-        { title: "Education", path: "/education" },
-        { title: "Skills", path: "/skills" },
-    ];
+  const navLinks = [
+    { title: "Alan", to: "home" },
+    { title: "Sobre mí", to: "about" },
+    { title: "Proyectos", to: "projects" },
+    { title: "Educación", to: "education" },
+    { title: "Skills", to: "skills" },
+  ];
+
   return (
     <NavbarContainer>
       <LinksStyled>
         {navLinks.map((link, index) => (
-          <Link key={index} href={link.path}>
-            {link.title.toUpperCase()}
-          </Link>
+          <ScrollLink
+            to={link.to}
+            smooth={true}
+            duration={500}
+            offset={-100}
+            key={index}
+          >
+            <StyledLink>{link.title.toUpperCase()}</StyledLink>
+          </ScrollLink>
         ))}
       </LinksStyled>
     </NavbarContainer>

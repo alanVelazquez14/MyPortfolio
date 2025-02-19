@@ -4,7 +4,7 @@ export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: start;
-  height: 80vh;
+  height: 90vh;
   margin-left: 400px;
 `;
 

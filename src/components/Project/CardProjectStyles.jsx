@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const TechOverlay = styled.div`
   position: absolute;
+  padding: 10px;
   border-radius: 8px;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 95%;
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
   display: flex;
@@ -18,6 +19,8 @@ export const TechOverlay = styled.div`
 `;
 
 export const CardProjectContainer = styled.div`
+  width: 300px;
+  height: 400px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -66,6 +69,7 @@ export const UrlCardProjectContainer = styled.a`
   display: flex;
   justify-content: start;
   align-items: center;
+  margin-top: auto;
   &:hover {
     color: brown;
   }
@@ -88,4 +92,11 @@ export const TechBadge = styled.span`
   margin: 5px;
   border-radius: 5px;
   font-size: 0.8rem;
+`;
+
+export const DescriptionCardProjectContainer = styled.p`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 `;

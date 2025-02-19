@@ -4,7 +4,7 @@ export const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: start;
-  height: 80vh;
+  height: 90vh;
   margin-left: 400px;
 `;
 
@@ -18,7 +18,7 @@ export const TextAboutContainer = styled.p`
   color: #b9d6f2;
   font-weight: 500;
   margin-top: 30px;
-  width: 70%;
+  width: 80%;
 
   span {
     font-weight: 800;

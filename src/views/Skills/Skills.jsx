@@ -1,6 +1,26 @@
 import React from "react";
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs } from "react-icons/fa";
-import { SiRedux, SiNextdotjs, SiStyledcomponents, SiTailwindcss, SiTypescript, SiMongodb, SiMysql, SiPostgresql, SiGit, SiGithub, SiVercel, SiPostman, SiJest } from "react-icons/si";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJsSquare,
+  FaReact,
+  FaNodeJs,
+} from "react-icons/fa";
+import {
+  SiRedux,
+  SiNextdotjs,
+  SiStyledcomponents,
+  SiTailwindcss,
+  SiTypescript,
+  SiMongodb,
+  SiMysql,
+  SiPostgresql,
+  SiGit,
+  SiGithub,
+  SiVercel,
+  SiPostman,
+  SiJest,
+} from "react-icons/si";
 import {
   Container,
   InfoText,
@@ -50,7 +70,7 @@ const Skills = () => {
   ];
 
   return (
-    <SkillsContainer>
+    <SkillsContainer id="skills">
       <SkillsTitle>SKILLS</SkillsTitle>
       <Container>
         {skills.map((skill) => (
@@ -67,10 +87,14 @@ const Skills = () => {
         ))}
       </Container>
       <InfoText>
-      Feel free to check out the source code of this portfolio here: 
-      <a href="https://github.com/alanVelazquez14/MyPortfolio" target="_blank" rel="noreferrer">
-         GitHub
-      </a>
+        Siéntete libre de revisar el código fuente de este portafolio aquí:
+        <a
+          href="https://github.com/alanVelazquez14/MyPortfolio"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </a>
       </InfoText>
     </SkillsContainer>
   );

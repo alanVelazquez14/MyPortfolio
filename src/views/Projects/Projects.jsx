@@ -10,9 +10,9 @@ import { dataProjects } from "../../components/Project/dataProjects";
 
 const Projects = () => {
   return (
-    <ProjectContainer>
-      <TitleProject>PROJECTS</TitleProject>
-      <TextProject> Projects I have worked on: </TextProject>
+    <ProjectContainer id="projects">
+      <TitleProject>PROYECTOS</TitleProject>
+      <TextProject> Proyectos en los que he trabajado: </TextProject>
       <ContainerCards>
         {dataProjects.map((project) => (
           <CardProject
@@ -22,6 +22,7 @@ const Projects = () => {
             img={project.img}
             url={project.url}
             technologies={project.technologies}
+            description={project.description}
           />
         ))}
       </ContainerCards>

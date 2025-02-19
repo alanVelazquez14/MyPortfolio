@@ -21,9 +21,19 @@ export const TitleHome = styled.h1`
 
 export const HomeText = styled.p`
   font-size: 1rem;
-  color: #0353a4;
+  color: #0654a1;
   font-weight: 500;
-    margin-top: 30px;
+  margin-top: 30px;
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+    
+    &:hover {
+      color: brown;
+    }
+  }
 `;
 
 export const ButtonHome = styled.button`
@@ -44,7 +54,7 @@ export const ButtonHome = styled.button`
     background-color: brown;
   }
 
-  a{
+  a {
     color: #b9d6f2;
     text-decoration: none;
   }
