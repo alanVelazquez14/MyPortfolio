@@ -37,7 +37,7 @@ export const dataProjects = [
     id: 4,
     title: "CinemaLab",
     img: "/cinemalab.png",
-    url: "https://cinemalab.vercel.app/",
+    url: "https://github.com/alanVelazquez14/cinemaLab",
     technologies: [
       "JavaScript",
       "Bootstrap",
