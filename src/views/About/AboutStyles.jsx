@@ -4,13 +4,25 @@ export const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: start;
-  height: 90vh;
+  margin-top: 150px;
   margin-left: 400px;
+
+  @media (max-width: 1280px) {
+    margin-left: 300px;
+  }
+
+  @media (max-width: 1110px) {
+    margin-left: 250px;
+  }
 `;
 
 export const TitleAbout = styled.h1`
   font-size: 3rem;
   color: #b9d6f2;
+
+  @media (max-width: 1110px) {
+    font-size: 1.8rem;
+}
 `;
 
 export const TextAboutContainer = styled.p`
@@ -22,6 +34,11 @@ export const TextAboutContainer = styled.p`
 
   span {
     font-weight: 800;
+  }
+
+  @media (max-width: 1110px) {
+    font-size: 1rem;
+    width: 90%;
   }
 `;
 

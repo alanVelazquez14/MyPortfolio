@@ -4,13 +4,22 @@ export const HomeContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  margin-top: 100px;
   font-size: 2rem;
   margin-left: 400px;
 
   span {
     font-weight: 800;
   }
+
+  @media (max-width: 1280px) {
+    margin-left: 300px;
+  }
+
+  @media (max-width: 1110px) {
+    margin-left: 250px;
+    font-size: 1.3rem;
+}
 `;
 
 export const TitleHome = styled.h1`

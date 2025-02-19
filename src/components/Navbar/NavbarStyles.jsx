@@ -12,6 +12,10 @@ export const NavbarContainer = styled.div`
   align-items: center;
   background-color: #02538a;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+
+  @media (max-width: 1280px) {
+    width: 200px;
+  }
 `;
 
 export const LinksStyled = styled.div`
@@ -20,6 +24,10 @@ export const LinksStyled = styled.div`
   gap: 1rem;
   margin-top: 1rem;
   align-items: center;
+
+  @media (max-width: 1110px) {
+    font-size: .7rem;
+  }
 `;
 
 export const Link = styled.a`

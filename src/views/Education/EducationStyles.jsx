@@ -1,21 +1,42 @@
 import styled from "styled-components";
 
 export const EducationContainer = styled.div`
-  height: 90vh;
+  margin-top: 100px;
   display: flex;
   justify-content: start;
   margin-left: 400px;
   flex-direction: column;
+
+  @media (max-width: 1280px) {
+    margin-left: 300px;
+  }
+
+  @media (max-width: 1110px) {
+    margin-left: 250px;
+  }
+
 `;
 
 export const TitleEducation = styled.h1`
   font-size: 3rem;
   color: #b9d6f2;
+
+  @media (max-width: 1110px) {
+    font-size: 1.8rem;
+  }
 `;
 
 export const SubtitleEducation = styled.h2`
   font-size: 2rem;
   color: #b9d6f2;
+
+  @media (max-width: 1165px) {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 1110px) {
+    font-size: 1.3rem;
+  }
 `;
 
 export const TextEducation = styled.p`
@@ -23,6 +44,16 @@ export const TextEducation = styled.p`
   color: #b9d6f2;
   margin-left: 20px;
   margin-top: -20px;
+
+  @media (max-width: 1165px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 1110px) {
+    font-size: 0.8rem;
+    margin-top: -10px;
+
+  }
 `;
 
 export const ParagraphEducation = styled.p`
@@ -30,11 +61,29 @@ export const ParagraphEducation = styled.p`
   color: #b9d6f2;
   margin-left: 20px;
   margin-top: -10px;
+  padding: 20px;
+
+  @media (max-width: 1920px) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: 1280px) {
+    padding: 0 40px;
+  }
+
+  @media (max-width: 1165px) {
+    font-size: 0.8rem;
+    margin-left: -10px;
+  }
 `;
 
 export const ContainerButtons = styled.div`
   display: flex;
   gap: 20px;
+
+  @media (max-width: 1165px) {
+    gap: 10px;
+  }
 `;
 
 export const ButtonCertificate = styled.div`
@@ -60,6 +109,17 @@ export const ButtonCertificate = styled.div`
 
     &:hover {
       background-color: brown;
+    }
+
+    @media (max-width: 1165px) {
+      font-size: 1rem;
+      padding: 10px 15px;
+      width: 150px;
+    }
+
+    @media (max-width: 1165px) {
+      font-weight: 500;
+      margin-left: 0;
     }
   }
 `;

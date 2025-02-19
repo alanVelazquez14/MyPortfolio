@@ -28,7 +28,7 @@ const Education = () => {
   return (
     <>
       <EducationContainer id="education">
-        <TitleEducation>EDUCATION</TitleEducation>
+        <TitleEducation>EDUCACIÓN</TitleEducation>
 
         <SubtitleEducation>NUCBA</SubtitleEducation>
         <TextEducation>Full Stack Developer (Finalizado - 2024)</TextEducation>
