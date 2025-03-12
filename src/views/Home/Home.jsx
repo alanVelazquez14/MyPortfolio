@@ -52,7 +52,7 @@ const Home = () => {
         </a>
       </HomeText>
       <ButtonHome>
-        <a href="/CV ALAN.pdf" download="CV ALAN.pdf">
+        <a href="/Alan Velazquez CV.pdf" download="CV ALAN.pdf">
           Descargar CV
         </a>
       </ButtonHome>
