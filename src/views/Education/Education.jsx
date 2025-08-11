@@ -23,6 +23,10 @@ const Education = () => {
       name: "REACT",
       url: "/Certificado_React.pdf",
     },
+    {
+      name: "CODING BOOTCAMP FULL STACK",
+      url: "/Certificado_Coding_Bootcamp_Full_Stack.pdf",
+    },
   ];
 
   return (
